@@ -2,7 +2,6 @@ require "nvchad.autocmds"
 local autocmd = vim.api.nvim_create_autocmd
 
 autocmd("VimEnter", {
-  group = startup_group,
   callback = function()
     vim.defer_fn(function()
       vim.cmd("tabnew")
